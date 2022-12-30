@@ -18,6 +18,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
           script: |
             cd Github-Action-test && git pull
             npm install --no-save
